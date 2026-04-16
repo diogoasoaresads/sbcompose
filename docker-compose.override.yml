@@ -1,0 +1,10 @@
+services:
+  vector:
+    healthcheck:
+      test: ["CMD", "true"]
+      interval: 5s
+      timeout: 3s
+      retries: 1
+
+  analytics:
+    depends_on: {}
